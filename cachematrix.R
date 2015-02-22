@@ -5,14 +5,14 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 m <- NULL                            # a dummy null variable to store inverse
-set<-function(a)                     # a function to set the value of x in global workspace
+set<-function(a)                     # function to set the value in global workspace
 {
 x<<-a
 }
-findinverse<-function(){             # a function to calculate the inverse and store it in m 
+findinverse<-function(){             #function to calculate the inverse and store it in m 
  m <<- solve(x)
 }
-getinverse<-function() m            # a function to return m i.e. inverse of reqd matrix      
+getinverse<-function() m            # function to return m(inverse)      
 list(set = set,findinverse = findinverse,getinverse = getinverse) #a special list containing all functions is returned
 
 }
