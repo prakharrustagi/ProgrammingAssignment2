@@ -28,5 +28,4 @@ if(!is.null(inverse))      #checks for already calculated inverse
 }
 inverse <- x$findinverse() #else calculates the required inverse
 inverse                    #returns calculated inverse
-        
 }
