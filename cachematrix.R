@@ -22,8 +22,8 @@ list(set = set,findinverse = findinverse,getinverse = getinverse) #a special lis
 
 cacheSolve <- function(x, ...) {
 inverse <- x$getinverse()  #gets the inverse from special list "x" created by makeCacheMatrix
-if(!is.null(inverse))      #checks for already calculated inverse
-{
+if(!is.null(inverse))      #checks for an already calculated inverse
+{                        
  return(inverse)           #returns stored inverse
 }
 inverse <- x$findinverse() #else calculates the required inverse
